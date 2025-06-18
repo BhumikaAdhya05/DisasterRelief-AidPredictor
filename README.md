@@ -28,10 +28,6 @@ A machine learning project that predicts the required quantities of critical rel
 ├── README.md # Project documentation
 └── requirements.txt # List of required packages
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 📊 Dataset Requirements
@@ -59,27 +55,18 @@ The CSV file should contain the following columns:
    cd DisasterRelief-AidPredictor
 Install dependencies:
 
-bash
-Copy
-Edit
+
 pip install -r requirements.txt
 Run the main script:
 
-bash
-Copy
-Edit
+
 python disaster_aid_predictor.py
 🔍 Sample Prediction
-python
-Copy
-Edit
+
 example = predict_aid("Flood", 150, 60000, 12000, 40000, 8000, 30000)
 print(example)
 Output (Table Format):
 
-java
-Copy
-Edit
 📌 Predicted Aid Requirements for Disaster Scenario
 
 +------------------------+--------------------+
@@ -92,27 +79,23 @@ Edit
 | Medicine Supply (kits) | 433                |
 | Sanitary Supply (items)| 1400               |
 +------------------------+--------------------+
+
 📦 Model Export
 The model is saved as a .pkl file for reuse:
 
-python
-Copy
-Edit
+
 with open("disaster_relief_model.pkl", "wb") as file:
     pickle.dump(tuned_model, file)
+    
 📚 Dependencies
-text
-Copy
-Edit
+
 pandas
 numpy
 scikit-learn
 prettytable
 Generate with:
 
-bash
-Copy
-Edit
+
 pip freeze > requirements.txt
 ✨ Future Enhancements
 Incorporate live disaster feeds (e.g., from APIs like NDMA, NASA)
@@ -124,7 +107,7 @@ Add feature importance analysis and SHAP explainability
 Extend to regional-specific supply predictions
 
 🧠 Credits
-Developed by [Your Name] | Guided by AI (ChatGPT)
+Developed by Bhumika Adhya | Guided by AI 
 
 📜 License
 This project is licensed under the MIT License.
