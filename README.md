@@ -58,8 +58,8 @@ The CSV file should contain the following columns:
  pip install -r requirements.txt
 
 Run the main script:
-```bash
-python disaster_aid_predictor.py
+ 
+ python disaster_aid_predictor.py
 
 🔍 Sample Prediction
 
