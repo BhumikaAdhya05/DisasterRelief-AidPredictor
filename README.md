@@ -53,14 +53,12 @@ The CSV file should contain the following columns:
    ```bash
    git clone https://github.com/yourusername/DisasterRelief-AidPredictor.git
    cd DisasterRelief-AidPredictor
-Install dependencies:
-
-
-pip install -r requirements.txt
+  Install dependencies:
+ 
+ pip install -r requirements.txt
 
 Run the main script:
-
-
+```bash
 python disaster_aid_predictor.py
 
 🔍 Sample Prediction
@@ -84,32 +82,28 @@ Output (Table Format):
 
 
 📦 Model Export
-The model is saved as a .pkl file for reuse:
 
+The model is saved as a .pkl file for reuse:
 
 with open("disaster_relief_model.pkl", "wb") as file:
     pickle.dump(tuned_model, file)
     
 📚 Dependencies
 
-pandas
-numpy
-scikit-learn
-prettytable
+pandas,
+numpy,
+scikit-learn,
+prettytable,
 
 Generate with:
-
 pip freeze > requirements.txt
 
 ✨ Future Enhancements
 
-Incorporate live disaster feeds (e.g., from APIs like NDMA, NASA)
-
-Build a Streamlit dashboard for real-time interaction
-
-Add feature importance analysis and SHAP explainability
-
-Extend to regional-specific supply predictions
+-Incorporate live disaster feeds (e.g., from APIs like NDMA, NASA)
+-Build a Streamlit dashboard for real-time interaction
+-Add feature importance analysis and SHAP explainability
+-Extend to regional-specific supply predictions
 
 🧠 Credits
 
