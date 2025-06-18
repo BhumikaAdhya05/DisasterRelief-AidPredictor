@@ -57,28 +57,31 @@ Install dependencies:
 
 
 pip install -r requirements.txt
+
 Run the main script:
 
 
 python disaster_aid_predictor.py
+
 🔍 Sample Prediction
 
 example = predict_aid("Flood", 150, 60000, 12000, 40000, 8000, 30000)
 print(example)
+
 Output (Table Format):
 
 📌 Predicted Aid Requirements for Disaster Scenario
 
-+------------------------+--------------------+
-| Aid Type              | Predicted Quantity |
-+------------------------+--------------------+
+
+| Aid Type               | Predicted Quantity |
+-------------------------|---------------------
 | Food Supply (kg)       | 11789              |
 | Water Supply (liters)  | 54789              |
 | Shelter Supply (tents) | 234                |
 | Baby Food Supply (kg)  | 764                |
 | Medicine Supply (kits) | 433                |
 | Sanitary Supply (items)| 1400               |
-+------------------------+--------------------+
+
 
 📦 Model Export
 The model is saved as a .pkl file for reuse:
@@ -93,11 +96,13 @@ pandas
 numpy
 scikit-learn
 prettytable
+
 Generate with:
 
-
 pip freeze > requirements.txt
+
 ✨ Future Enhancements
+
 Incorporate live disaster feeds (e.g., from APIs like NDMA, NASA)
 
 Build a Streamlit dashboard for real-time interaction
@@ -107,7 +112,9 @@ Add feature importance analysis and SHAP explainability
 Extend to regional-specific supply predictions
 
 🧠 Credits
+
 Developed by Bhumika Adhya | Guided by AI 
 
 📜 License
+
 This project is licensed under the MIT License.
